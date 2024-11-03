@@ -1,15 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variável</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <input type="text" id="userInput">
-    <button onclick="armazenarValor()">Armazenar</button>
-    <p id="valorInserido"></p>
 
-    <script src="script.js"></script>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Olá meu nome é Mateus</h2>
+            <p>Sou aspirante a desenvolvedor fullstack</p>
+            <a href="projects" class="btn">Veja meus projetos</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Sobre mim</h2>
+            <p>Nos últimos tempos, me senti cada vez preso em um trabalho que já não me traz a realização que eu buscava. Preciso de uma mudança para redescobrir o entusiasmo no trabalho e crescer profissionalmente. Diante disso, decidi explorar a área de tecnologia, onde vejo um grande potencial para me reinventar e contribuir de maneira mais direta e criativa.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="project">
+                <img src="img/projeto1.jpg" alt="Projeto1">
+                <div class="project-info">
+                    <h3>Projeto Chess</h3>
+                    <p>Esse projeto consiste no desenvolvimento de uma página funcional de xadrez</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img/projeto2.jpg" alt="Projeto2">
+                <div class="project-info">
+                    <h3>Simco+</h3>
+                    <p>Simulador de compras que permite ao usuário escolher produtos, ajustar quantidades, calcular valores totais e aplicar descontos. O projeto simula uma experiência de compra completa, com funcionalidades de carrinho de compras e simulação de checkout.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="img/projeto3.png" alt="Projeto3">
+                <div class="project-info">
+                    <h3>Aplicativo de previsáo do tempo</h3>
+                    <p>Um aplicativo móvel que exibe a previsão do tempo para diferentes locais. Os usuários podem buscar por cidade ou usar a localização atual para obter previsões detalhadas, incluindo temperatura, umidade e condições climáticas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <form action="#" method="POST">
+                <label for="name">Nome: </label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="name">E-mail: </label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="name">Deixe seu recado: </label>
+                <textarea type="message" id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Mateus Morselli</p>
+        </div>
+    </footer>
+
+
+    
 </body>
 </html>

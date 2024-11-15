@@ -1,11 +1,15 @@
-function armazenarValor(){
+let titulo = document.getElementById("titulo");
+let descricao = document.querySelector(".texto");
+let button = document.getElementById("botao");
 
-    //armazena o valor digitado
-    var userInput = document.getElementById("userInput").value;
+//evento que acontece após o click
+botao.addEventListener("click", function()
+    {
+        titulo.innerHTML = "Em breve!";
+        texto.innerHTML = "Logo os projetos estarão devidamente prontos!";        
+    });
 
-    //exibe o valor armazenado
-    console.log(`O valor da variável é ${userInput}`);
-
-    //atualiza o conteúdo
-    document.getElementById("valorInserido").innerText = `O valor inserido é ${userInput}`;
+function estilizar(){
+        texto.style.color = "red";
+        titulo.style.color = "red";        
 }

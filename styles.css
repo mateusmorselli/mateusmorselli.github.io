@@ -68,7 +68,7 @@ header li {
     margin-bottom: 40px;
 }
 
-#hero .btn {
+#hero button {
     display: inline-block; /* Evita corte ao definir o botão como inline-block */
     font-size: 16px;
     line-height: 16px; /* Mantém o mesmo line-height */
@@ -80,7 +80,7 @@ header li {
     border: 1px #000 solid;
 }
 
-#hero .btn:hover {
+#hero button:hover {
     transform: translateY(-2px); /* Leve elevação */
     box-shadow: 4px 4px 7px rgba(0, 0, 0);
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfólio de Mateus</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,10 +22,35 @@
 
     <section id="hero">
         <div class="container">
-            <h2 id="titulo">Olá meu nome é Mateus</h2>
+            <h2 id="titulo">Olá, meu nome é Mateus</h2>
             <p id="texto">Sou aspirante a desenvolvedor fullstack</p>
             <button id="botao" onclick="estilizar()">Veja meus projetos!</button>
             <script src="script.js"></script>
+        </div>
+    </section>
+
+    <!-- Seção de Competências -->
+    <section id="skills">
+        <div class="container">
+            <h2>Minhas Competências</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Front-end</h3>
+                    <p>Desenvolvimento de interfaces responsivas e modernas com HTML, CSS e JavaScript.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>React</h3>
+                    <p>Criação de aplicações dinâmicas e componentizadas com React.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Manipulação do DOM e integração com APIs.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Back-end</h3>
+                    <p>Conhecimentos em Node.js e bancos de dados para desenvolvimento fullstack.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -56,7 +81,7 @@
             <div class="project">
                 <img src="img/projeto3.png" alt="Projeto3">
                 <div class="project-info">
-                    <h3>Aplicativo de previsáo do tempo</h3>
+                    <h3>Aplicativo de previsão do tempo</h3>
                     <p>Um aplicativo móvel que exibe a previsão do tempo para diferentes locais. Os usuários podem buscar por cidade ou usar a localização atual para obter previsões detalhadas, incluindo temperatura, umidade e condições climáticas</p>
                 </div>
             </div>
@@ -70,11 +95,11 @@
                 <label for="name">Nome: </label>
                 <input type="text" id="name" name="name" required>
 
-                <label for="name">E-mail: </label>
+                <label for="email">E-mail: </label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="name">Deixe seu recado: </label>
-                <textarea type="message" id="message" name="message" rows="4" required></textarea>
+                <label for="message">Deixe seu recado: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
                 <input type="submit" value="Enviar">
             </form>
@@ -87,7 +112,5 @@
         </div>
     </footer>
 
-
-    
 </body>
 </html>
